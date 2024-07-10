@@ -61,13 +61,14 @@ input:focus {
     color: rgb(79, 164, 255);
 }
 
-#form-agree button {
+#form-agree span {
     color: white;
     background-color: #4b91ca;
     padding: 3px 10px;
     font-size: 10px;
     border: 2px solid;
     border-radius: 5px;
+    cursor: default;
 }
 
 #form-container .button-container {
