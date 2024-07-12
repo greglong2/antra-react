@@ -39,7 +39,7 @@
 > I would use `const` when I want to ensure that the variable's data remains the same. This helps prevent accidental reassignments and makes for more predictable code. 
 
 ## Give an example of a common mistake related to hoisting and explain how to fix it.
-> A common mistake is misunderstanding how a variable is hoiseted, especially with initialization. For example:
+> A common mistake is misunderstanding how a variable is hoisted, especially with initialization. For example:
 > ```js
 > console.log(str); // undefined
 > var str = 'hoisted';
@@ -94,4 +94,4 @@
 > foo4(arr);
 > console.log(arr); // [1, 2, 3, 3]
 > ```
-> Output: [1, 2, 3] -- `b` initially is a reference to the original array, but then it is reassigned to a new reference to a new array, so the original array is not modified.
+> Output: [1, 2, 3, 3] -- `b` initially is a reference to the original array, but then it is reassigned to a new reference to a new array, so the original array is not modified.
