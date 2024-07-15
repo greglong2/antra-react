@@ -2,7 +2,7 @@
 
 >A prototype is an object that is associated with every function and object within JavaScript as soon as they are created. It is a way to share properties and methods among similar objects. It is utuilzed as a constructor when objects are instantiated with the `new` keyword. It can be accessed using `ConstructorFunction.prototype`, `Object.getProrotypeOf(instance)`, or `instance.__proto__`.
 >
->The prototype chain is a series of prototype objects linked together. When a method is accessed, JavaScript will first look for the method in the object itself. If it cannot find the method, it will look for the method in the object's prototype. If the method also could not be found, it will continue down the chain accessing each object's prototype until the prototype object is null. This is known as the prototype chain. 
+>The prototype chain is a series of prototype objects linked together. When a method is accessed, JavaScript will first look for the method in the object itself. If it cannot find the method, it will look for the method in the object's prototype. If the method also could not be found, it will continue down the chain accessing each object's prototype until the prototype object is null.
 
 ## Implement your version of Array.pop().
 
