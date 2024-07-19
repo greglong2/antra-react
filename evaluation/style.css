@@ -1,0 +1,161 @@
+#app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.inventory-wrapper,
+.cart-wrapper {
+    width: 360px;
+}
+
+.inventory-container,
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cart-items,
+#inventory-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
+
+#cart-items li,
+#inventory-items li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(223, 210, 195);
+    border-radius: 5px;
+}
+
+#cart-items li {
+    justify-content: center;
+}
+
+#cart-items li p,
+#inventory-items li p {
+    margin: 9px;
+    width: 70px
+}
+
+/* button !! */
+
+.inventory_minus-btn,
+.inventory_plus-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.inventory_minus-btn {
+    background-color: rgb(201, 87, 87);
+}
+
+.inventory_plus-btn {
+    background-color: rgb(113, 203, 113);
+}
+
+.add-cart-btn,
+.cart_delete-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(84, 84, 224);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.add-cart-btn {
+    width: 80px;
+    height: 22px;
+}
+
+.cart_delete-btn {
+    width: 50px;
+    height: 22px;
+}
+
+
+.checkout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+
+.inventory_pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.inventory_pagination-pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 5px;
+}
+
+.inventory_pagination-pages button {
+    border-radius: 10%;
+    border: 1px solid #000;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+}
+
+.inventory_pagination_selected-btn {
+    background-color: #828282;
+    color: #000;
+    cursor: pointer;
+}
+
+.inventory_pagination_unselected-btn {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+.inventory_pagination_prev-btn,
+.inventory_pagination_next-btn {
+    background-color: rgb(84, 84, 224);
+    ;
+    border-radius: 10%;
+    padding: 2px 8px;
+    color: #ffffff;
+    width: 50px;
+    height: 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
