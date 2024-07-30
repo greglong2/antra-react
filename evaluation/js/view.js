@@ -10,6 +10,7 @@ const View = (() => {
     const cartItemsEl = document.querySelector("#cart-items");
     const inventoryItemsEl = document.querySelector("#inventory-items");
     const checkoutBtnEl = document.querySelector(".checkout-btn");
+    const sortAlphabeticalEl = document.querySelector("#sort_alphabetical-btn")
 
     const renderInventory = (inventory) => {
 
@@ -137,6 +138,7 @@ const View = (() => {
         renderCart,
         renderInventory,
         renderCartPagination,
-        renderInventoryPagination
+        renderInventoryPagination,
+        sortAlphabeticalEl
     };
 })();

@@ -9,6 +9,7 @@ const Controller = ((model, view) => {
         handleCheckout();
         handlePagination();
         handlePaginationButton();
+        handleSortAlphabetical();
     };
 
     // TODO: render updates when cart amount is updated
@@ -163,6 +164,29 @@ const Controller = ((model, view) => {
                 if (state.currentPageInventory !== state.totalPagesInventory - 1) state.currentPageInventory += 1;
             }
 
+        })
+    }
+
+    const handleSortAlphabetical = () => {
+        view.sortAlphabeticalEl.addEventListener('click', e => {
+            state.inventory = state.inventory.sort((a, b) => {
+                const contentA = a.content.toUpperCase();
+                const contentB = b.content.toUpperCase();
+
+                if (contentA < contentB) {
+                    return -1
+                }
+                if (contentA > contentB) {
+                    return 1
+                }
+
+                return 0
+            })
+
+            console.log(state.currentPage)
+            console.log(state.inventory)
+
+            //view.renderInventory(state.getInventoryForPage(state.currentPage))
         })
     }
 
