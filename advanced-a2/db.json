@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "todos": [
+    {
+      "id": "395b",
+      "title": "afgweg"
+    },
+    {
+      "id": "c4f3",
+      "title": "wefwef"
+    }
+  ]
+}
