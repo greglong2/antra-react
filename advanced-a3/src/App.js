@@ -37,10 +37,13 @@ function App() {
 
   }
 
-  const editHandler = async (todo) => {
+  const editHandler = async (todoId) => {
 
-    let todoId = todo.id;
-    let newTitle = prompt("Enter new title", todo.title);
+    let newTitle = prompt("Enter new title", "new title");
+
+    if (!newTitle) {
+      return
+    }
 
     API.editTodo(todoId, newTitle).then(() => {
       let newTodos = todos.map((todo) => {
