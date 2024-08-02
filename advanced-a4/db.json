@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "todos": [
+    {
+      "id": "d4cf",
+      "title": "new title"
+    },
+    {
+      "id": "0ada",
+      "title": "new title"
+    },
+    {
+      "id": "abcf",
+      "title": "some input"
+    },
+    {
+      "id": "3124",
+      "title": "some input"
+    },
+    {
+      "id": "9140",
+      "title": "some input"
+    },
+    {
+      "id": "72b9",
+      "title": ""
+    },
+    {
+      "id": "d547",
+      "title": "aeaef"
+    },
+    {
+      "id": "6c15",
+      "title": "aeaef"
+    },
+    {
+      "id": "fa64",
+      "title": ""
+    },
+    {
+      "id": "409f",
+      "title": ""
+    },
+    {
+      "id": "31c6",
+      "title": "some input"
+    }
+  ]
+}
