@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+table,
+tr,
+th,
+td {
+    border: 2px solid;
+}
+
+td {
+    padding-right: 75px;
+}
