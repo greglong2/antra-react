@@ -8,14 +8,24 @@ export const searchBooks = createAsyncThunk(
             return;
         }
 
+        dispatch(setLoading(true));
+
         console.log('query', query, encodeURI(query));
 
-        const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}&startIndex=0&maxResults=10`);
-        const data = await response.json();
+        try {
+            const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}&startIndex=0&maxResults=10`);
+            const data = await response.json();
 
-        console.log(data);
+            console.log(data);
 
-        dispatch(setSearchResults(data.items));
+            dispatch(setSearchResults(data.items));
+        }
+        catch (err) {
+            console.error(err);
+        }
+        finally {
+            dispatch(setLoading(false));
+        }
     }
 )
 
@@ -24,7 +34,8 @@ export const booksSlice = createSlice({
     name: "books",
     initialState: {
         searchResults: [],
-        wishlist: []
+        wishlist: [],
+        loading: false
     },
     reducers: {
         addWishlistItem: (state, action) => {
@@ -43,10 +54,13 @@ export const booksSlice = createSlice({
         },
         setSearchResults: (state, action) => {
             state.searchResults = action.payload;
+        },
+        setLoading: (state, action) => {
+            state.loading = action.payload;
         }
     }
 });
 
-export const { addWishlistItem, removeWishlistItem, setSearchResults } = booksSlice.actions;
+export const { addWishlistItem, removeWishlistItem, setLoading, setSearchResults } = booksSlice.actions;
 
 export default booksSlice.reducer;
