@@ -23,15 +23,3 @@
 .book-card-container h3 {
     margin: 0;
 }
-
-.book-card-container hr {
-    flex: 2;
-    width: 100%;
-    /* Make the <hr> stretch horizontally */
-    border: 0;
-    /* Remove default border */
-    border-top: 1px solid #ccc;
-    /* Style the horizontal line */
-    margin: 20px 0;
-    /* Space above and below the <hr> */
-}

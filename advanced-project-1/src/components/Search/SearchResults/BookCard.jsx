@@ -23,7 +23,6 @@ function BookCard({ onAdd, book }) {
                 <li><strong>Published Date:</strong> {publishedDate}</li>
                 <li><strong>Description:</strong> {description}</li>
             </ul>
-            <hr></hr>
         </div>
     );
 }
