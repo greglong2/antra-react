@@ -1,0 +1,20 @@
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    border-radius: 4px;
+    width: 150px;
+    height: 25px;
+}
+
+.input-btn {
+    color: black;
+    background-color: rgba(25, 112, 211, 0.701);
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}

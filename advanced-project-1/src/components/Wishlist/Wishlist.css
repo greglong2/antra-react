@@ -1,0 +1,18 @@
+.wishlist-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wishlist-container h3 {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.wishlist-container ul {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    padding: 0px;
+    margin: 0px;
+}

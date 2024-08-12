@@ -1,0 +1,16 @@
+/* div {
+  border-style: dashed;
+  border-color: red;
+} */
+
+.App {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.search-list {
+  max-width: 500px;
+}
