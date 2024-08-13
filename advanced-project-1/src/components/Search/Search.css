@@ -18,3 +18,23 @@
     margin-left: 10px;
     border-radius: 5px;
 }
+
+.autocomplete {
+    position: absolute;
+    border: 1px solid black;
+    background-color: white;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.option {
+    padding: 5px;
+}
+
+.option:hover {
+    background-color: lightgrey;
+}
+
+.active-option {
+    background-color: lightgrey;
+}

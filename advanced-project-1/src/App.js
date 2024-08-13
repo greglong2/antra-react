@@ -4,7 +4,7 @@ import SearchResults from './components/Search/SearchResults/SearchResults';
 import Search from './components/Search/Search';
 // import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addWishlistItem, removeWishlistItem, searchBooks } from './redux/slices/BooksSlice';
+import { addWishlistItem, removeWishlistItem, searchBooks, setSelectedBook } from './redux/slices/BooksSlice';
 
 function App() {
 
@@ -12,11 +12,13 @@ function App() {
   const books = useSelector(state => state.books.searchResults);
   const wishlist = useSelector(state => state.books.wishlist);
   const loading = useSelector(state => state.books.loading);
+  const selectedBook = useSelector(state => state.books.selectedBook);
 
   // const [books, setBooks] = useState([]);
   // const [wishlist, setWishlist] = useState([]);
 
   const searchHandler = async (query) => {
+    dispatch(setSelectedBook(null))
     dispatch(searchBooks(query))
   }
 
@@ -45,7 +47,7 @@ function App() {
       <div className="search-list">
         <Search onSubmit={searchHandler} />
         {
-          loading ? <div>Loading...</div> : <SearchResults onAdd={addToWishlistHandler} books={books} />
+          loading ? <div>Loading...</div> : <SearchResults onAdd={addToWishlistHandler} books={selectedBook ? [selectedBook] : books} />
         }
       </div>
       <div className='wishlist-list'>

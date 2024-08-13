@@ -35,7 +35,10 @@ export const booksSlice = createSlice({
     initialState: {
         searchResults: [],
         wishlist: [],
-        loading: false
+        loading: false,
+        autocomplete: false,
+        autocompleteIndex: 0,
+        selectedBook: null
     },
     reducers: {
         addWishlistItem: (state, action) => {
@@ -57,10 +60,20 @@ export const booksSlice = createSlice({
         },
         setLoading: (state, action) => {
             state.loading = action.payload;
+        },
+        setAutocomplete: (state, action) => {
+            state.autocomplete = action.payload;
+        },
+        setAutocompleteIndex: (state, action) => {
+            console.log('autocomplete index action.payload', action.payload)
+            state.autocompleteIndex = action.payload;
+        },
+        setSelectedBook: (state, action) => {
+            state.selectedBook = action.payload;
         }
     }
 });
 
-export const { addWishlistItem, removeWishlistItem, setLoading, setSearchResults } = booksSlice.actions;
+export const { addWishlistItem, removeWishlistItem, setAutocomplete, setAutocompleteIndex, setSelectedBook, setLoading, setSearchResults } = booksSlice.actions;
 
 export default booksSlice.reducer;
