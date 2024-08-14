@@ -1,0 +1,11 @@
+.wishlist-item-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.wishlist-item-container button {
+    border-radius: 4px;
+    margin-bottom: 10px
+}

@@ -1,0 +1,25 @@
+.book-card-container {
+    display: flex;
+    justify-content: center;
+    border-bottom: rgb(244, 244, 244) 2px solid;
+    padding-top: 10px
+}
+
+.book-card-container img {
+    width: 100px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.book-card-container ul {
+    padding: 0;
+}
+
+.book-card-container li {
+    padding-top: 20px;
+    list-style-type: none;
+}
+
+.book-card-container h3 {
+    margin: 0;
+}
