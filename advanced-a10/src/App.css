@@ -1,0 +1,84 @@
+.calendar-container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-width: 550px;
+  max-height: 250px;
+}
+
+.calendar__date-pagination {
+  display: grid;
+  grid-template-columns: 1fr 110px 110px 110px 120px 1fr;
+}
+
+.calendar__date-pagination-item {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  padding: 5px;
+  cursor: default;
+}
+
+#calendar__date-prev-btn {
+  grid-column: 2;
+  cursor: pointer;
+}
+
+#calendar__date-current {
+  background-color: lightgray;
+  border-radius: 5px;
+  color: black;
+}
+
+#calendar__date-next-btn {
+  cursor: pointer;
+}
+
+.calendar__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.calendar__box {
+  border: 1px solid blue;
+  background-color: rgb(243, 243, 243);
+}
+
+.calendar__current-month {
+  display: flex;
+  justify-content: center;
+}
+
+.calendar__day-names {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: rgb(156, 156, 156);
+  align-items: center;
+  justify-items: center;
+}
+
+.calendar__dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.calendar__date-item:nth-child(7n+1) {
+  color: red;
+}
+
+.calendar__date-item:nth-child(7n) {
+  color: gray;
+}
+
+.calendar__date-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+
+#calendar__date-item-selected {
+  background-color: rgb(254, 239, 144);
+}
