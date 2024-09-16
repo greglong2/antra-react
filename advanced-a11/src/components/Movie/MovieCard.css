@@ -1,0 +1,35 @@
+.movie-card {
+    display: grid;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: black;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 10px;
+    margin: 0 7px 30px 7px;
+    width: 300px;
+    height: 550px;
+}
+
+.movie-card-image {
+    width: 300px;
+    height: 360px;
+    max-width: 300px;
+    max-height: 360px;
+    object-fit: scale-down;
+    border-radius: 10px;
+    border: 1px solid #923c3c;
+    background-color: black;
+}
+
+.movie-card-title {
+    border-bottom: 1px solid #ccc;
+    min-height: 50px;
+    /* Minimum height, but can grow if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

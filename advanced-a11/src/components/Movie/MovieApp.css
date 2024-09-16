@@ -1,0 +1,11 @@
+.movie-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* change the grid layout to 2 columns for small display */
+@media (max-width: 1000px) {
+    .movie-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
